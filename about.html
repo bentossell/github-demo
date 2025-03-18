@@ -4,31 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Ben Tossell</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/globals.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link active">About</a>
-        </nav>
-        <h1>About Me</h1>
+<body class="min-h-screen bg-background">
+    <header class="border-b">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center space-x-6">
+                    <a href="index.html" class="text-xl font-bold text-primary">Ben Tossell</a>
+                    <div class="hidden md:flex space-x-4">
+                        <a href="index.html" class="text-sm font-medium text-muted-foreground hover:text-primary">Home</a>
+                        <a href="about.html" class="text-sm font-medium text-primary hover:text-primary/80">About</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="about-content">
-            <h2>My Journey</h2>
-            <p>I'm a passionate developer who loves creating amazing things. My journey in technology has been driven by a desire to build tools that make a difference.</p>
-            
-            <h2>Skills & Expertise</h2>
-            <ul class="skills-list">
-                <li>Web Development</li>
-                <li>UI/UX Design</li>
-                <li>Problem Solving</li>
-                <li>Team Collaboration</li>
-            </ul>
 
-            <h2>What I Do</h2>
-            <p>I focus on creating elegant solutions to complex problems. Whether it's building web applications, designing user interfaces, or developing new features, I'm always excited to take on new challenges.</p>
+    <main class="container mx-auto px-4 py-8">
+        <section class="max-w-3xl mx-auto space-y-12">
+            <div class="space-y-4">
+                <h1 class="text-4xl font-bold tracking-tight">About Me</h1>
+                <p class="text-xl text-muted-foreground">
+                    A passionate developer crafting digital experiences
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold">My Journey</h2>
+                    <p class="text-muted-foreground">
+                        I'm a passionate developer who loves creating amazing things. My journey in technology has been driven by a desire to build tools that make a difference.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold">Skills & Expertise</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-card rounded-lg border p-4 hover:border-primary transition-colors">
+                            <h3 class="font-medium mb-2">Web Development</h3>
+                            <p class="text-sm text-muted-foreground">Building modern web applications with cutting-edge technologies</p>
+                        </div>
+                        <div class="bg-card rounded-lg border p-4 hover:border-primary transition-colors">
+                            <h3 class="font-medium mb-2">UI/UX Design</h3>
+                            <p class="text-sm text-muted-foreground">Creating beautiful and intuitive user interfaces</p>
+                        </div>
+                        <div class="bg-card rounded-lg border p-4 hover:border-primary transition-colors">
+                            <h3 class="font-medium mb-2">Problem Solving</h3>
+                            <p class="text-sm text-muted-foreground">Finding elegant solutions to complex challenges</p>
+                        </div>
+                        <div class="bg-card rounded-lg border p-4 hover:border-primary transition-colors">
+                            <h3 class="font-medium mb-2">Team Collaboration</h3>
+                            <p class="text-sm text-muted-foreground">Working effectively in dynamic team environments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold">What I Do</h2>
+                    <p class="text-muted-foreground">
+                        I focus on creating elegant solutions to complex problems. Whether it's building web applications, designing user interfaces, or developing new features, I'm always excited to take on new challenges.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
 </body>
