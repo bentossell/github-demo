@@ -4,38 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Tossell - Vibe Coder</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/globals.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-        </nav>
-        <h1>Ben Tossell - vibe coder</h1>
+<body class="min-h-screen bg-background">
+    <header class="border-b">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex items-center justify-between">
+                <div class="flex items-center space-x-6">
+                    <a href="index.html" class="text-xl font-bold text-primary">Ben Tossell</a>
+                    <div class="hidden md:flex space-x-4">
+                        <a href="index.html" class="text-sm font-medium text-primary hover:text-primary/80">Home</a>
+                        <a href="about.html" class="text-sm font-medium text-muted-foreground hover:text-primary">About</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="about">
-            <h2>Welcome</h2>
-            <p>Welcome to my personal website! I'm a developer who loves creating amazing things. <a href="about.html">Learn more about me</a>.</p>
-        </section>
-        <section class="contact">
-            <h2>Get in Touch</h2>
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="max-w-3xl mx-auto space-y-8">
+            <div class="space-y-4">
+                <h1 class="text-4xl font-bold tracking-tight">Welcome to my corner of the web</h1>
+                <p class="text-xl text-muted-foreground">
+                    I'm a developer who loves creating amazing things. 
+                    <a href="about.html" class="text-primary hover:text-primary/80 underline">Learn more about me</a>.
+                </p>
+            </div>
+
+            <div class="bg-card rounded-lg border p-6 space-y-6">
+                <h2 class="text-2xl font-semibold">Get in Touch</h2>
+                <form id="contact-form" class="space-y-4">
+                    <div class="space-y-2">
+                        <label for="name" class="text-sm font-medium">Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        >
+                    </div>
+                    <div class="space-y-2">
+                        <label for="email" class="text-sm font-medium">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        >
+                    </div>
+                    <div class="space-y-2">
+                        <label for="message" class="text-sm font-medium">Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            required
+                            class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        ></textarea>
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="w-full bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
+                    >
+                        Send Message
+                    </button>
+                </form>
+            </div>
         </section>
     </main>
 </body>
